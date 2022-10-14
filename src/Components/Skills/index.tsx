@@ -1,7 +1,7 @@
 import { HeaderNav, HeaderNavbar, NavBrand, NavContainer, NavLink } from "./navbar.style";
 import React from "react";
 
-function Skils() {
+function Skills() {
   return (
     <>
       <HeaderNavbar>
@@ -19,4 +19,4 @@ function Skils() {
     </>
   );
 }
-export default Skils;
+export default Skills;
