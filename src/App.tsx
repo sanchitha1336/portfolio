@@ -193,6 +193,18 @@ function Portfolio() {
                                     <a href="https://vfrontend.parentof.com/" target="_blank" rel="noopener noreferrer">Visit Project</a>
                                 ],
                             },
+        {
+            title: "Photography Images",
+            description: "Developed a photography images project using simple HTML, CSS, JavaScript, and Bootstrap. The project showcases a header image background, image grids, and an image slider.",
+            details: [
+                "Simple HTML Structure: Created a basic HTML structure for the project to provide a foundation for the design and content.",
+                "Bootstrap Framework: Utilized Bootstrap to enhance the styling and responsiveness of the project. Bootstrap's grid system and components were used to create the image grids and slider.",
+                "Image Grids: Implemented image grids to display multiple images in an organized and visually appealing manner.",
+                "Image Slider: Developed an image slider using JavaScript to allow users to view multiple images with smooth transitions and navigation controls.",
+                "Header Image Background: Incorporated a header image background to create a visually striking introduction to the project.",
+                <a href="#" target="_blank" rel="https://photography-git-main-sanchitha1336s-projects.vercel.app/">Visit Project</a>  // Replace '#' with the actual project link
+            ],
+        },
                         ].map((project, index) => (
                             <div key={index}>
                                 <strong style={{ color: "#333", marginBottom: "8px" }}>{project.title}</strong><br />
