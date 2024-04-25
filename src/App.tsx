@@ -251,7 +251,7 @@ function Portfolio() {
                 "Image Grids: Implemented image grids to display multiple images in an organized and visually appealing manner.",
                 "Image Slider: Developed an image slider using JavaScript to allow users to view multiple images with smooth transitions and navigation controls.",
                 "Header Image Background: Incorporated a header image background to create a visually striking introduction to the project.",
-                <a href="#" target="_blank" rel="https://photography-git-main-sanchitha1336s-projects.vercel.app/">Visit Project</a>  // Replace '#' with the actual project link
+                <a href="https://photography-rho-five.vercel.app/" target="_blank" rel="https://photography-git-main-sanchitha1336s-projects.vercel.app/">Visit Project</a>  // Replace '#' with the actual project link
             ],
         },
                     ].map((project, index) => (
