@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
+import Portfolio from './App';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path='/' element={<Portfolio/>}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
