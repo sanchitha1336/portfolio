@@ -68,7 +68,7 @@ export default function NotAboutUs() {
 
   const convertStreamToBlob = async (stream) => {
     return new Promise((resolve, reject) => {
-      const mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
+      const mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/mp4' });
       const chunks = [];
 
       mediaRecorder.ondataavailable = (e) => {
@@ -80,7 +80,7 @@ export default function NotAboutUs() {
 
       mediaRecorder.onstop = () => {
         if (chunks.length > 0) {
-          const videoBlob = new Blob(chunks, { type: 'video/webm' });
+          const videoBlob = new Blob(chunks, { type: 'video/mp4' });
           resolve(videoBlob);
         } else {
           reject(new Error("No data recorded."));
