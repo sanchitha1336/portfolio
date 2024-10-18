@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
 import Portfolio from './App';
+import RemoveAudio from './RemoveAudio';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -12,6 +13,7 @@ root.render(
     <Router>
       <Routes>
         <Route path='/' element={<Portfolio/>}></Route>
+        <Route path='/removeAudio' element={<RemoveAudio/>}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
