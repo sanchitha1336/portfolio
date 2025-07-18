@@ -84,7 +84,7 @@ function Portfolio() {
                     <img src="/IMG_20240411_114448.jpg" alt="Sanchitha S" className="profile-image" />
                     <h2 className="p-section-title">Profile</h2>
                     <p className="p-section-content">
-                        Passionate and experienced Full Stack Developer with a strong background in MERN stack and Next.js. With over 2.8 years of hands-on experience in designing, developing, and deploying scalable web applications, I excel in both frontend and backend development. Committed to producing high-quality code, optimizing performance, and creating user-friendly interfaces, I thrive in fast-paced environments and enjoy tackling new challenges.
+                        Passionate and experienced Full Stack Developer with a strong background in MERN stack and Next.js. With over 4.3 years of hands-on experience in designing, developing, and deploying scalable web applications, I excel in both frontend and backend development. Committed to producing high-quality code, optimizing performance, and creating user-friendly interfaces, I thrive in fast-paced environments and enjoy tackling new challenges.
                     </p>
                 </div>
             </section>
@@ -132,6 +132,60 @@ function Portfolio() {
 
             <section id="experience" className="container main-section">
                 <h2 className="w-section-title">Work Experience</h2>
+                <div className="job">
+    <h3 className="job-title">Frontend Developer (MERN, Next.js)</h3>
+    <p className="job-company">
+        <strong>Peepul Tree World Pvt Ltd</strong><br />
+        Jan 2024 – Present&nbsp;&nbsp;|&nbsp;&nbsp;1.2 Years
+    </p>
+    <ul className="job-list">
+        <li>Developed and optimized high-traffic e-commerce web platform using Next.js and MERN stack.</li>
+        <li>Migrated existing React.js components to Next.js for improved SEO and server-side rendering.</li>
+        <li>Built and integrated scalable custom APIs, enhanced UI/UX, and optimized web performance.</li>
+        <li>Worked with cross-functional teams to deliver high-impact features and seamless integrations.</li>
+    </ul>
+    <div>
+        <h4 className="job-section-title">Projects</h4>
+        {[
+            {
+                title: "PeepulTree E-commerce Platform",
+                description: "Premium e-commerce site for artisan-made home decor, blending India’s rich heritage with modern digital experiences.",
+                details: [
+                    "Developed end-to-end e-commerce website with full product, order, and inventory management.",
+                    "Migrated legacy codebase to Next.js for faster load times and better SEO.",
+                    "Integrated Shopify (headless architecture) and customized Sanity CMS for dynamic content management.",
+                    "Implemented Algolia-powered search for instant and personalized product discovery.",
+                    "Integrated loyalty program features to drive user retention and rewards.",
+                    "Optimized website performance, Core Web Vitals, and security best practices.",
+                    <a href="https://www.peepultree.world" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                ]
+            },
+            {
+                title: "Internal Data & Product Management Platforms",
+                description: "Built supporting MERN stack applications for inventory, sales, and product catalog management for e-commerce operations.",
+                details: [
+                    "Developed dashboard tools for admins and staff to manage inventory, product listings, and order fulfillment.",
+                    "Ensured integration with e-commerce storefront for real-time updates and streamlined business workflows."
+                ]
+            }
+        ].map((project, index) => (
+            <div key={index}>
+                <strong style={{ color: "#333", marginBottom: "8px" }}>{project.title}</strong><br />
+                <p className="job-section-title" onClick={() => toggleDropdown(`pt-dropdown${index}`)}>
+                    {project.description}
+                    <div className={`drop-icon ${dropdownOpen[`pt-dropdown${index}`] ? 'rotate' : ''}`}>▼</div>
+                </p>
+                {dropdownOpen[`pt-dropdown${index}`] && (
+                    <div className="project-dropdown">
+                        {project.details.map((detail, detailIndex) => (
+                            <p key={detailIndex}>{detail}</p>
+                        ))}
+                    </div>
+                )}
+            </div>
+        ))}
+    </div>
+</div>
                 <div className="job">
                     <h3 className="job-title">Full Stack Developer (MERN)</h3>
                     <p className="job-company"><strong>ParentOf solutions Pvt Ltd</strong><br />2022-2024  1.8 Years</p>
