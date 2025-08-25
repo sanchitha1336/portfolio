@@ -328,7 +328,7 @@ function Portfolio() {
             </section>
             <section id="resume" className="container main-section">
     <h2 className="resume-section-title">Resume</h2>
-    <iframe src="https://drive.google.com/file/d/1bPbN1tdGAxh_p0qoGtIVWbSwRbROzDiX/preview" width="100%" height="600px"></iframe>
+    <iframe src="https://drive.google.com/file/d/1HZbG2Y-oa8q0arSdi-7tiwrGgsBzG1P5/preview" width="100%" height="600px"></iframe>
 </section>
 
             <section id="language" className="container main-section">
